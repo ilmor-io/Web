@@ -22,14 +22,25 @@ header {
   position: relative;
   z-index: 2;
   display: flex;
-  
+}
+@media(min-width: 600px) {
+  .up_bar {
+    height: 130px;
+    background-size: 105% 150%;
+    background-position: -15px -60px;
+  }
 }
 
 .logo_brand img {
   width: 100px;
   object-position: -30px;
-  loa
 }
+@media(min-width: 600px) {
+  .logo_brand img {
+    width: 150px;
+  }
+}
+  
 
 .navigation ul {
   padding: 0 0 100px 0;
@@ -48,10 +59,10 @@ header {
 }
 @media(min-width: 600px) {
   .navigation ul li a {
-    font-size: 44px;
+    font-size: 50px;
   }
   .navigation ul li {
-    margin: 0px 50px 0px 90px;
+    margin: 20px 50px 0px 90px;
   }
 }
 
@@ -124,7 +135,13 @@ h1 {
   background-size: 106% 100px;
   background-position: -10px -51px;
   margin-bottom: -5px;
-  
+}
+@media(min-width: 600px) {
+  .main_bar {
+    height: 100px;
+    background-size: 105% 150%;
+    background-position: -10px -51px;
+  }
 }
 
 main {
@@ -208,6 +225,13 @@ main .bg_prod {
   z-index: 2;
   display: flex;
 }
+@media(min-width: 600px) {
+  .popular {
+    height: 100px;
+    background-size: 105% 150%;
+    background-position: -10px -51px;
+  }
+}
 
 .popularity {
   background-image: url("reference/info_brand.jpg");
@@ -235,6 +259,13 @@ main .bg_prod {
   transform: rotate(180deg);
   z-index: 2;
   display: flex;
+}
+@media(min-width: 600px) {
+  .popular_dubl {
+    height: 100px;
+    background-size: 105% 150%;
+    background-position: -10px -51px;
+  }
 }
 
 .star {
@@ -409,11 +440,17 @@ main .bg_prod {
   background-image: url("reference/footer.png");
   background-size: 100% 200%;
   background-position: 0 -49px;
-  
   position: relative;
   z-index: 2;
   display: flex;
   margin-bottom: 0;
+}
+@media(min-width: 600px) {
+  .bg_footer {
+    height: 100px;
+    background-size: 105% 130%;
+    background-position: -10px -51px;
+  }
 }
 
 footer {
