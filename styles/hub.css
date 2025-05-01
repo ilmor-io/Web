@@ -28,6 +28,7 @@ header {
 .logo_brand img {
   width: 100px;
   object-position: -30px;
+  loa
 }
 
 .navigation ul {
@@ -285,18 +286,140 @@ main .bg_prod {
 }
 
 
+.label_for h2 {
+  text-align: center;
+  padding-bottom: 20px;
+  font-size: 55px;
+  font-family: serif;
+}
+
+.for_product {
+  padding-top: 20px;
+  background: linear-gradient(#2CA8DE ,whitesmoke);
+  background-size: 100% 50%;
+  background-repeat: no-repeat;
+}
+.for_products {
+  margin: 6.6%;
+}
+
+.stap_1, .stap_3 {
+  background: white;
+  width: 100%;
+  display: flex;
+  margin-left: 7%;
+  margin-bottom: 40px;
+  border: 1px solid;
+  border-radius: 20px 0 0 20px;
+  box-shadow: -5px 5px 8px rgba(0, 0.8, 0, 0.5);
+}
+
+.stap_2, .stap_4 {
+  background: white;
+  width: 100%;
+  display: flex;
+  text-align: right;
+  flex-direction: row-reverse;
+  margin: -9%;
+  margin-bottom: 10px;
+  align-items: stretch;
+  border: 1px solid;
+  border-radius: 0 20px 20px 0;
+  box-shadow:
+  5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+
+.stap1_img, .stap3_img {
+  width: 80%;
+  height: auto;
+  padding-right: 10px;
+}
+.stap2_img, .stap4_img {
+  width: 80%;
+  height: auto;
+  padding-left: 10px;
+}
+
+
+.stap1_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px 0 0 19px;
+  box 0.4);
+}
+.stap2_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 19px 19px 0;
+}
+.stap3_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 19px 0 0 19px;
+  box 0.4);
+}
+.stap4_img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 0 19px 19px 0;
+  box 0.4);
+}
+
+.info_stap {
+  width: 100%;
+  height: 100%;
+  font-size: 17px;
+  align-items: center;
+  font-family: serif;
+}
+
+
 
 /*-------footer-------*/
-
-footer .bg_footer {
+.bg_footer {
   padding: 0;
-  margin: 0;
   height: 50px;
   background-image: url("reference/footer.png");
-  background-size: 105% 100px;
-  background-position: -8px -43px;
-  background-repeat: no-repeat;
+  background-size: 110% 100px;
+  background-position: -10px -40px;
+  
   position: relative;
   z-index: 2;
   display: flex;
+  margin-bottom: 0;
 }
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: #0C0C1C;
+}
+
+.footer_info p {
+  margin: 0;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  padding-bottom: 20px;
+  border-top: 2px dashed whitesmoke;
+}
+
+.footer_menu ul {
+  margin: 0;
+  display: flex;
+  padding-left: 33%;
+}
+
+.footer_menu ul li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+}
+
+.footer_menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+}
+
