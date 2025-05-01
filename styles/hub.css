@@ -292,6 +292,11 @@ main .bg_prod {
   font-size: 55px;
   font-family: serif;
 }
+@media(min-width: 600px) {
+  .label_for h2 {
+    font-size: 90px;
+  }
+}
 
 .for_product {
   padding-top: 20px;
@@ -300,7 +305,12 @@ main .bg_prod {
   background-repeat: no-repeat;
 }
 .for_products {
-  margin: 6.6%;
+  margin: 23.6px;
+}
+@media(min-width: 600px) {
+  .for_products {
+    margin: 62px;
+  }
 }
 
 .stap_1, .stap_3 {
@@ -313,6 +323,13 @@ main .bg_prod {
   border-radius: 20px 0 0 20px;
   box-shadow: -5px 5px 8px rgba(0, 0.8, 0, 0.5);
 }
+@media(min-width: 600px) {
+  .stap_1, .stap_3 {
+    margin-bottom: 120px;
+    box-shadow:
+    -15px 15px 18px rgba(0, 0, 0, 0.4);
+  }
+}
 
 .stap_2, .stap_4 {
   background: white;
@@ -320,13 +337,20 @@ main .bg_prod {
   display: flex;
   text-align: right;
   flex-direction: row-reverse;
-  margin: -9%;
+  margin: -10%;
   margin-bottom: 10px;
   align-items: stretch;
   border: 1px solid;
   border-radius: 0 20px 20px 0;
   box-shadow:
   5px 5px 8px rgba(0, 0, 0, 0.4);
+}
+@media(min-width: 600px) {
+  .stap_2, .stap_4 {
+    margin-bottom: 40px;
+    box-shadow:
+    15px 15px 18px rgba(0, 0, 0, 0.4);
+  }
 }
 
 .stap1_img, .stap3_img {
@@ -345,7 +369,6 @@ main .bg_prod {
   width: 100%;
   height: 100%;
   border-radius: 19px 0 0 19px;
-  box 0.4);
 }
 .stap2_img img {
   width: 100%;
@@ -372,7 +395,11 @@ main .bg_prod {
   align-items: center;
   font-family: serif;
 }
-
+@media(min-width: 600px) {
+  .info_stap {
+    font-size: 50px;
+  }
+}
 
 
 /*-------footer-------*/
@@ -380,8 +407,8 @@ main .bg_prod {
   padding: 0;
   height: 50px;
   background-image: url("reference/footer.png");
-  background-size: 110% 100px;
-  background-position: -10px -40px;
+  background-size: 100% 200%;
+  background-position: 0 -49px;
   
   position: relative;
   z-index: 2;
@@ -401,8 +428,14 @@ footer {
   color: white;
   text-align: center;
   font-size: 12px;
+  font-family: roboto;
   padding-bottom: 20px;
   border-top: 2px dashed whitesmoke;
+}
+@media(min-width: 600px) {
+  .footer_info p {
+    font-size: 20px;
+  }
 }
 
 .footer_menu ul {
@@ -410,16 +443,33 @@ footer {
   display: flex;
   padding-left: 33%;
 }
+@media(min-width: 600px) {
+  .footer_menu ul {
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+  }
+}
 
 .footer_menu ul li {
   float: left;
   list-style: none;
   margin: 10px;
 }
+@media(min-width: 600px) {
+  .footer_menu ul li {
+    
+  }
+}
 
 .footer_menu ul li a {
   text-decoration: none;
   color: white;
   font-size: 12px;
+  font-family: roboto;
 }
-
+@media(min-width: 600px) {
+  .footer_menu ul li a {
+    font-size: 20px;
+  }
+}
