@@ -1,0 +1,302 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  background: whitesmoke;
+}
+
+header {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.up_bar {
+  padding: 0;
+  margin: 0;
+  height: 100px;
+  background-image: url("reference/up_bar.png");
+  background-size: 105% 100px;
+  background-position: -15px -5px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  
+}
+
+.logo_brand img {
+  width: 100px;
+  object-position: -30px;
+}
+
+.navigation ul {
+  padding: 0 0 100px 0;
+}
+
+.navigation ul li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+}
+
+.navigation ul li a {
+  text-decoration: none;
+  color: black;
+  font-size: 22px;
+}
+@media(min-width: 600px) {
+  .navigation ul li a {
+    font-size: 44px;
+  }
+  .navigation ul li {
+    margin: 0px 50px 0px 90px;
+  }
+}
+
+.info_brand {
+  margin-top: -20px;
+  position: relative;
+  padding-top: 40px;
+  background-image: url("reference/info_brand.jpg");
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  padding: 20px;
+  margin-bottom: -20px;
+}
+
+.info_brand h2 {
+  color: white;
+  text-align: center;
+  font-size: 45px;
+  margin-top: 0;
+  font-family: Georgia, serif;
+}
+@media(min-width: 600px) {
+  .info_brand h2 {
+    font-size: 90px;
+  }
+}
+  
+
+.info_brand p {
+  color: white;
+  font-family: "Great Vibes", cursive;
+  font-weight: 550;
+  font-style: normal;
+  text-align: center;
+  font-size: 40px;
+  padding: 10px;
+  margin: 0;
+  line-height: 0.85;
+}
+@media(min-width: 600px) {
+  .info_brand p {
+    font-size: 60px;
+    line-height: 1;
+  }
+}
+
+h1 {
+  font-family: serif;
+  justify-content: space-between;
+  font-size: 45px;
+  text-align: center;
+  margin: 0;
+  padding: 0 0 20px 0;
+}
+@media(min-width: 600px) {
+  h1 {
+    font-size: 80px;
+  }
+}
+
+
+
+/*-------main-------*/
+
+.main_bar{
+  width: 100%;
+  height: 50px;
+  background-image: url("reference/up_bar.png");
+  transform: rotate(180deg);
+  background-size: 106% 100px;
+  background-position: -10px -51px;
+  margin-bottom: -5px;
+  
+}
+
+main {
+  margin: 0;
+  padding: 0;
+}
+
+.display {
+  padding-left: 20%;
+  display: flex;
+  flex-wrap: no-wrap;
+  justify-items: flex-start;
+  gap: 15px;
+  text-align: center;
+}
+
+
+main .bg_prod {
+  background: #2CA8DE;
+  background-image: url("reference/back.png");
+  background-size: 115% 100%;
+}
+
+.card_product {
+  width: 35%;
+  text-align: center;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+
+.card_product_2 {
+  width: 35%;
+  text-align: center;
+  height: auto;
+  margin-bottom: 10px;
+}
+.card {
+  width: 100%;
+  background: white;
+  justify-content: center;
+  border-radius: 15px;
+  padding: 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+.card img{
+  text-align: center;
+  width: 100%;
+  border-radius: 10px;
+}
+.card_img {
+  width: 100%;
+  box-shadow: inset 0 -2px 0 rgba(139, 69, 19, 0.3);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.info_card {
+  margin: 0;
+  padding: 0;
+  font-size: 130%;
+}
+
+.price {
+  color: brown;
+  font-size: 25px;
+  font-family: "Great Vibes", cursive;
+  font-weight: 600;
+}
+
+.popular {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  background-image: url("reference/up_bar.png");
+  background-size: 105% 100px;
+  background-position: -15px -55px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
+
+.popularity {
+  background-image: url("reference/info_brand.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  margin-top: -20px;
+  position: relative;
+  padding-top: 10px;
+  padding: 20px;
+  margin-bottom: -20px;
+  color: white;
+  font-family: "Great Vibes", cursive;
+}
+
+.popular_dubl{
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  background-image: url("reference/up_bar.png");
+  background-size: 105% 100px;
+  background-position: -12px -55px;
+  background-repeat: no-repeat;
+  position: relative;
+  transform: rotate(180deg);
+  z-index: 2;
+  display: flex;
+}
+
+.star {
+  display: flex;
+  align-items: stretch;
+  background: #2CA8DE;
+}
+.star_product {
+  padding-left: 15%;
+  width: 35%;
+  height: auto;
+  margin-bottom: 15px;
+  text-align: center;
+  border-radius: 10px
+}
+.star_card {
+  border-radius: 10px;
+  width: 100%;
+  background: white;
+  justify-content: center;
+  padding: 0;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+}
+.star_info {
+  width: 50%;
+  margin-left: 15px;
+  text-align: center;
+  line-height: 1;
+  font-size: 17px;
+  font-family: serif;
+}
+@media(min-width: 600px) {
+  .star_info {
+    font-size: 40px;
+  }
+  .info_card {
+    font-size: 40px;
+  }
+  .price {
+    font-size: 40px;
+  }
+  .popularity {
+    font-size: 100px;
+  }
+}
+.card_img img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+
+/*-------footer-------*/
+
+footer .bg_footer {
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  background-image: url("reference/footer.png");
+  background-size: 105% 100px;
+  background-position: -8px -43px;
+  background-repeat: no-repeat;
+  position: relative;
+  z-index: 2;
+  display: flex;
+}
