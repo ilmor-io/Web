@@ -86,7 +86,7 @@ header {
   right: 0;
   bottom: 0;
   background: #2C83A8;
-  filter: blur(8px);
+  filter: blur(20px);
   z-index: -1;
 }
 
@@ -123,10 +123,11 @@ header {
 }
 @media(min-width: 600px) {
   .search input {
-    width: 50%;
-    height: 35px;
+    width: 80%;
+    height: 45px;
     background-size: 35px 35px;
-    background-position: 100% 2px;
+    background-position: 100% 7px;
+    font-size: 20px;
   }
 }
 /*------- main -------*/
@@ -137,7 +138,11 @@ header {
   gap: 0px;
   margin-top: 15px;
 }
-
+@media(min-width: 600px) {
+  .container_cards {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
 
 
 .card {
@@ -154,11 +159,21 @@ header {
 
 .card_title {
   text-align: center;
+  font-family: serif;
 }
 
 .price {
   color: brown;
   text-align: center;
+  font-family: serif;
+}
+@media(min-width: 600px) {
+  .card_title {
+    font-size: 20px;
+  }
+  .price {
+    font-size: 20px;
+  }
 }
 
 
