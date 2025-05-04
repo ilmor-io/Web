@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #c4c4c4;
+  min-height: 100vh;
 }
 
 header {
@@ -146,11 +147,25 @@ header {
   grid-template-columns: repeat(2, 1fr);
   gap: 0px;
   margin-top: 15px;
+  flex: 1;
+  min-height: 52.5vh;
 }
 @media(min-width: 769px) {
   .container_cards {
     grid-template-columns: repeat(3, 1fr);
   }
+}
+
+.no-results-message {
+  text-align: center;
+  font-size: 18px;
+  padding-left: 15vh;
+  color: #666;
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 }
 
 
@@ -210,6 +225,7 @@ footer {
   margin: 0;
   padding: 0;
   background: #0C0C1C;
+  margin-top: auto;
 }
 
 .footer_info p {
