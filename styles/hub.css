@@ -16,17 +16,17 @@ header {
   margin: 0;
   height: 100px;
   background-image: url("reference/up_bar.png");
-  background-size: 105% 100px;
+  background-size: 107% 100px;
   background-position: -15px -5px;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
   display: flex;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .up_bar {
     height: 130px;
-    background-size: 105% 150%;
+    background-size: 107% 150%;
     background-position: -15px -60px;
   }
 }
@@ -35,7 +35,7 @@ header {
   width: 100px;
   object-position: -30px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .logo_brand img {
     width: 150px;
   }
@@ -55,7 +55,8 @@ header {
 .navigation ul li {
   float: left;
   list-style: none;
-  margin: 10px;
+  margin-right: 10px;
+  padding-top: 13px;
 }
 .navigation ul li a:active, navigation ul li a:focus {
   background: none;
@@ -66,12 +67,17 @@ header {
   font-size: 22px;
   -webkit-tap-highlight-color: transparent;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .navigation ul li a {
     font-size: 50px;
+    padding-left: ;
   }
+  
   .navigation ul li {
-    margin: 20px 50px 0px 90px;
+    padding-top: 13px;
+  }
+  .navigation ul {
+    padding-left: 90px;
   }
 }
 
@@ -94,7 +100,7 @@ header {
   margin-top: 0;
   font-family: Georgia, serif;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .info_brand h2 {
     font-size: 90px;
   }
@@ -112,7 +118,7 @@ header {
   margin: 0;
   line-height: 0.85;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .info_brand p {
     font-size: 60px;
     line-height: 1;
@@ -127,7 +133,7 @@ h1 {
   margin: 0;
   padding: 0 0 20px 0;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   h1 {
     font-size: 80px;
   }
@@ -146,7 +152,7 @@ h1 {
   background-position: -10px -51px;
   margin-bottom: -5px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .main_bar {
     height: 100px;
     background-size: 105% 150%;
@@ -235,7 +241,7 @@ main .bg_prod {
   z-index: 2;
   display: flex;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .popular {
     height: 100px;
     background-size: 105% 150%;
@@ -270,7 +276,7 @@ main .bg_prod {
   z-index: 2;
   display: flex;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .popular_dubl {
     height: 100px;
     background-size: 105% 150%;
@@ -307,7 +313,7 @@ main .bg_prod {
   font-size: 17px;
   font-family: serif;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .star_info {
     font-size: 40px;
   }
@@ -333,7 +339,7 @@ main .bg_prod {
   font-size: 55px;
   font-family: serif;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .label_for h2 {
     font-size: 90px;
   }
@@ -348,7 +354,7 @@ main .bg_prod {
 .for_products {
   margin: 23.6px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .for_products {
     margin: 62px;
   }
@@ -364,7 +370,7 @@ main .bg_prod {
   border-radius: 20px 0 0 20px;
   box-shadow: -5px 5px 8px rgba(0, 0.8, 0, 0.5);
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .stap_1, .stap_3 {
     margin-bottom: 120px;
     box-shadow:
@@ -386,7 +392,7 @@ main .bg_prod {
   box-shadow:
   5px 5px 8px rgba(0, 0, 0, 0.4);
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .stap_2, .stap_4 {
     margin-bottom: 40px;
     box-shadow:
@@ -436,7 +442,7 @@ main .bg_prod {
   align-items: center;
   font-family: serif;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .info_stap {
     font-size: 50px;
   }
@@ -455,7 +461,7 @@ main .bg_prod {
   display: flex;
   margin-bottom: 0;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .bg_footer {
     height: 100px;
     background-size: 105% 130%;
@@ -479,9 +485,12 @@ footer {
   padding-bottom: 20px;
   border-top: 2px dashed whitesmoke;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .footer_info p {
-    font-size: 20px;
+    margin: 0;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -490,7 +499,7 @@ footer {
   display: flex;
   padding-left: 33%;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .footer_menu ul {
     padding-left: 0;
     margin: 0;
@@ -503,7 +512,7 @@ footer {
   list-style: none;
   margin: 10px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .footer_menu ul li {
     
   }
@@ -515,7 +524,7 @@ footer {
   font-size: 12px;
   font-family: roboto;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .footer_menu ul li a {
     font-size: 20px;
   }

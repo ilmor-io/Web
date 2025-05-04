@@ -15,14 +15,14 @@ header {
   margin: 0;
   height: 100px;
   background-image: url("reference/up_bar.png");
-  background-size: 105% 100px;
+  background-size: 107% 100px;
   background-position: -15px -5px;
   background-repeat: no-repeat;
   position: relative;
   z-index: 2;
   display: flex;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .up_bar {
     height: 130px;
     background-size: 107% 150%;
@@ -34,7 +34,7 @@ header {
   width: 100px;
   object-position: -30px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .logo_brand img {
     width: 150px;
   }
@@ -54,7 +54,8 @@ header {
 .navigation ul li {
   float: left;
   list-style: none;
-  margin: 10px;
+  margin-right: 10px;
+  padding-top: 13px;
 }
 
 .navigation ul li a {
@@ -62,18 +63,21 @@ header {
   color: black;
   font-size: 22px;
 }
-@media(min-width: 600px) {
+@media(min-width: 769px) {
   .navigation ul li a {
     font-size: 50px;
   }
   .navigation ul li {
-    margin: 20px 50px 0px 90px;
+    padding-top: 13px;
+  }
+  .navigation ul {
+    padding-left: 90px;
   }
 }
 .catalog:active, .catalog:focus, .new:active, .new:focus {
   background: none;
 }
-.new {
+.new, .catalog {
   position: relative;
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
@@ -91,10 +95,127 @@ header {
 }
 
 /*-------main-------*/
-main {
-  text-align: center;
+
+.new_list {
+  display: flex;
+  flex-direction: column;  /* Карточки в столбец */
+  gap: 20px;               /* Расстояние между карточками */
+        /* Максимальная ширина контейнера */
+       /* Центрирование */
+  padding: 5px;
+}
+
+.list {
+  display: block;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  min-height: 180px;       /* Минимальная высота карточки */
+  
+}
+
+.logo {
+  width: 100%;            /* Фиксированная ширина лого */
+  display: flex;
   align-items: center;
-  font-size: 50px;
-  font-family: serif;
-  margin-top: 50%;
+  justify-content: center;
+  transition: transform 0.5s easy;
+  transform-origin: center;
+}
+.logo img {
+  width: 100%;
+  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 2);
+  filter: contrast(1.1);
+}
+.list:hover .logo img {
+  transform: scale(1.1);
+  
+}
+
+.info {
+  flex: 1;                 /* Занимает всё оставшееся пространство */
+  padding: 24px;
+  padding-top: 5px;
+}
+
+/*-------footer-------*/
+.bg_footer {
+  padding: 0;
+  height: 50px;
+  background-image: url("reference/footer.png");
+  background-size: 100% 200%;
+  background-position: 0 -49px;
+  position: relative;
+  z-index: 2;
+  display: flex;
+  margin-bottom: 0;
+}
+@media(min-width: 769px) {
+  .bg_footer {
+    height: 100px;
+    background-size: 105% 130%;
+    background-position: -10px -51px;
+  }
+}
+
+footer {
+  margin: 0;
+  padding: 0;
+  background: #0C0C1C;
+}
+
+.footer_info p {
+  margin: 0;
+  padding-top: 20px;
+  color: white;
+  text-align: center;
+  font-size: 12px;
+  font-family: roboto;
+  padding-bottom: 20px;
+  border-top: 1px dashed whitesmoke;
+}
+@media(min-width: 769px) {
+  .footer_info p {
+    font-size: 12px;
+  }
+}
+
+.footer_menu ul {
+  margin: 0;
+  display: flex;
+  padding-left: 33%;
+}
+@media(min-width: 414px) {
+  .footer_menu ul {
+    padding-left: 0;
+    margin: 0;
+    justify-content: center;
+  }
+}
+
+.footer_menu ul li {
+  float: left;
+  list-style: none;
+  margin: 10px;
+}
+@media(min-width: 769px) {
+  .footer_menu ul li {
+    margin: 0;
+    font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+}
+
+.footer_menu ul li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-family: roboto;
+}
+@media(min-width: 769px) {
+  .footer_menu ul li a {
+    font-size: 20px;
+  }
 }
