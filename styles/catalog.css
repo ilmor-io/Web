@@ -70,7 +70,7 @@ header {
     margin: 20px 50px 0px 90px;
   }
 }
-.catalog:active, .catalog:focus {
+.catalog:active, .catalog:focus, .new:active, .new:focus {
   background: none;
 }
 .catalog {
