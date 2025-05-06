@@ -5,8 +5,10 @@ body {
 }
 
 header {
-  margin: 0;
-  padding: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
   
 }
 
@@ -82,65 +84,22 @@ header {
   overflow: hidden;
   -webkit-tap-highlight-color: transparent;
 }
-.new::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2C83A8;
-  filter: blur(20px);
-  z-index: -1;
-}
 
 /*-------main-------*/
 
-.new_list {
-  display: flex;
-  flex-direction: column;  /* Карточки в столбец */
-  gap: 20px;               /* Расстояние между карточками */
-        /* Максимальная ширина контейнера */
-       /* Центрирование */
-  padding: 5px;
-}
-
-.list {
-  display: block;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  min-height: 180px;       /* Минимальная высота карточки */
-  
-}
-
-.logo {
-  width: 100%;            /* Фиксированная ширина лого */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.5s easy;
-  transform-origin: center;
-}
-.logo img {
-  width: 100%;
-  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 2);
-  filter: contrast(1.1);
-}
-.list:hover .logo img {
-  transform: scale(1.1);
-  
-}
-
-.info {
-  flex: 1;                 /* Занимает всё оставшееся пространство */
-  padding: 24px;
-  padding-top: 5px;
+main {
+  margin-top: 100px;
+  text-align: center;
   font-family: serif;
 }
 
+.company {
+  margin: 5%;
+  
+}
+
 /*-------footer-------*/
+
 .bg_footer {
   padding: 0;
   height: 50px;
@@ -174,11 +133,14 @@ footer {
   font-size: 12px;
   font-family: roboto;
   padding-bottom: 20px;
-  border-top: 1px dashed whitesmoke;
+  border-top: 2px dashed whitesmoke;
 }
 @media(min-width: 769px) {
   .footer_info p {
+    margin: 0;
     font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -187,7 +149,7 @@ footer {
   display: flex;
   padding-left: 33%;
 }
-@media(min-width: 414px) {
+@media(min-width: 769px) {
   .footer_menu ul {
     padding-left: 0;
     margin: 0;
@@ -202,10 +164,7 @@ footer {
 }
 @media(min-width: 769px) {
   .footer_menu ul li {
-    margin: 0;
-    font-size: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
+    
   }
 }
 

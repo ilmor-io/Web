@@ -1,4 +1,5 @@
 
+  
 body {
   margin: 0;
   padding: 0;
@@ -350,6 +351,7 @@ main .bg_prod {
   background: linear-gradient(#2CA8DE ,whitesmoke);
   background-size: 100% 50%;
   background-repeat: no-repeat;
+  box-sizing: border-box;
 }
 .for_products {
   margin: 23.6px;
@@ -412,27 +414,17 @@ main .bg_prod {
 }
 
 
-.stap1_img img {
+.stap1_img img, .stap3_img img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   border-radius: 19px 0 0 19px;
 }
-.stap2_img img {
+.stap2_img img, .stap4_img img {
   width: 100%;
   height: 100%;
+  overflow: hidden;
   border-radius: 0 19px 19px 0;
-}
-.stap3_img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 19px 0 0 19px;
-  box 0.4);
-}
-.stap4_img img {
-  width: 100%;
-  height: 100%;
-  border-radius: 0 19px 19px 0;
-  box 0.4);
 }
 
 .info_stap {
@@ -448,6 +440,21 @@ main .bg_prod {
   }
 }
 
+.for_products > div {
+  opacity: 0;
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  will-change: transform; /* Оптимизация анимации */
+  backface-visibility: hidden; /* Предотвращает артефакты */
+}
+
+  /* 4. Начальные позиции (теперь без создания лишнего пространства) */
+.stap_1, .stap_3, .stap_2, .stap_4 { transform: translateY(100px); }
+
+  /* 5. Видимое состояние */
+.for_products > div.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
 
 /*-------footer-------*/
 .bg_footer {
