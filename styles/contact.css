@@ -2,6 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background: #c4c4c4;
+  min-height: 100vh;
 }
 
 header {
@@ -46,7 +47,6 @@ header {
   background: none;
 }
   
-
 .navigation ul {
   padding: 0 0 100px 0;
 }
@@ -57,16 +57,21 @@ header {
   margin-right: 10px;
   padding-top: 13px;
 }
-
+.navigation ul li a:active, navigation ul li a:focus {
+  background: none;
+}
 .navigation ul li a {
   text-decoration: none;
   color: black;
   font-size: 22px;
+  -webkit-tap-highlight-color: transparent;
 }
 @media(min-width: 769px) {
   .navigation ul li a {
     font-size: 50px;
+    padding-left: ;
   }
+  
   .navigation ul li {
     padding-top: 13px;
   }
@@ -74,70 +79,125 @@ header {
     padding-left: 90px;
   }
 }
+
 .catalog:active, .catalog:focus, .new:active, .new:focus {
   background: none;
 }
-.new, .catalog {
-  position: relative;
-  overflow: hidden;
-  -webkit-tap-highlight-color: transparent;
-}
-.new::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: #2C83A8;
-  filter: blur(20px);
-  z-index: -1;
-}
-
 /*-------main-------*/
 
-.new_list {
+main {
   display: flex;
-  flex-direction: column;  /* Карточки в столбец */
-  gap: 20px;               /* Расстояние между карточками */
-        /* Максимальная ширина контейнера */
-       /* Центрирование */
-  padding: 5px;
+  flex-wrap: wrap;
+  padding: 5%;
+  gap: 5%;
 }
 
-.list {
-  display: block;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  overflow: hidden;
-  min-height: 180px;       /* Минимальная высота карточки */
-  
+.phone {
+  border: 1px solid;
+  border-radius: 10px;
+  background: #F2F3F4;
+  text-align: center;
+  margin-top: 8%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
 }
-
-.logo {
-  width: 100%;            /* Фиксированная ширина лого */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: transform 0.5s easy;
-  transform-origin: center;
+.phone ul{
+  background: white;
+  border-top: 1px solid;
+  border-radius: 10px;
+  margin-bottom: auto;
 }
-.logo img {
-  width: 100%;
-  box-shadow: inset 10px 10px 10px rgba(255, 255, 255, 2);
-  filter: contrast(1.1);
-}
-.list:hover .logo img {
-  transform: scale(1.1);
-  
-}
-
-.info {
-  flex: 1;                 /* Занимает всё оставшееся пространство */
-  padding: 24px;
-  padding-top: 5px;
+.phone ul li {
   font-family: serif;
+  list-style: none;
+  margin-top: 5px;
+  padding-bottom: 5px;
+  margin-left: -55%;
+}
+
+.contacts {
+  border: 1px solid;
+  border-radius: 10px;
+  background: #F2F3F4;
+  text-align: center;
+  margin-top: 8%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.contacts ul{
+  background: white;
+  border-top: 1px solid;
+  border-radius: 10px;
+  margin-bottom: auto;
+}
+.contacts ul li {
+  font-family: serif;
+  list-style: none;
+  margin-top: 5px;
+  margin-left: -55%;
+  padding-bottom: 5px;
+}
+
+.pochta {
+  border: 1px solid;
+  border-radius: 10px;
+  background: white;
+  margin-left: 12%;
+  margin-top: 8%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.pochta ul li {
+  font-family: serif;
+  list-style: none;
+  text-align: center;
+  margin-left: -20%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+
+.contacts2 {
+  border: 1px solid;
+  border-radius: 10px;
+  background: #F2F3F3;
+  text-align: center;
+  margin-top: 8%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.contacts2 ul {
+  border-top: 1px solid;
+  border-radius: 10px;
+  margin-bottom: auto;
+  background: white;
+}
+.contacts2 ul li {
+  font-family: serif;
+  list-style: none;
+  margin-left: -55%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.ps {
+  width: 55%;
+  height: 25%;
+  border: 1px solid;
+  border-radius: 10px;
+  background: #F2F3F3;
+  text-align: center;
+  margin-top: 20%;
+  box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.5);
+}
+.ps ul {
+  border-top: 1px solid;
+  border-radius: 10px;
+  margin-bottom: auto;
+  background: white;
+}
+.ps ul li {
+  font-family: serif;
+  list-style: none;
+  margin-left: -25%;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 /*-------footer-------*/
@@ -145,7 +205,7 @@ header {
   padding: 0;
   height: 50px;
   background-image: url("reference/footer.png");
-  background-size: 100% 200%;
+  background-size: 102% 200%;
   background-position: 0 -49px;
   position: relative;
   z-index: 2;
@@ -164,6 +224,7 @@ footer {
   margin: 0;
   padding: 0;
   background: #0C0C1C;
+  margin-top: auto;
 }
 
 .footer_info p {
@@ -174,11 +235,14 @@ footer {
   font-size: 12px;
   font-family: roboto;
   padding-bottom: 20px;
-  border-top: 1px dashed whitesmoke;
+  border-top: 2px dashed whitesmoke;
 }
 @media(min-width: 769px) {
   .footer_info p {
+    margin: 0;
     font-size: 12px;
+    padding-left: 25px;
+    padding-right: 25px;
   }
 }
 
@@ -187,7 +251,7 @@ footer {
   display: flex;
   padding-left: 33%;
 }
-@media(min-width: 414px) {
+@media(min-width: 769px) {
   .footer_menu ul {
     padding-left: 0;
     margin: 0;
@@ -202,10 +266,7 @@ footer {
 }
 @media(min-width: 769px) {
   .footer_menu ul li {
-    margin: 0;
-    font-size: 12px;
-    padding-left: 25px;
-    padding-right: 25px;
+    
   }
 }
 

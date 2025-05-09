@@ -276,6 +276,7 @@ footer {
   color: white;
   font-size: 12px;
   font-family: roboto;
+  -webkit-tap-highlight-color: transparent;
 }
 @media(min-width: 769px) {
   .footer_menu ul li a {
